@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "functions": {
+    "src/app/api/**/*": {
+      "maxDuration": 15,
+      "includeFiles": "artifacts/{model.dcore,model_phase4_spec.dcore,tokenizer.json,deltacore_runtime.wasm,audit_master_report.json}"
+    }
+  }
+}
